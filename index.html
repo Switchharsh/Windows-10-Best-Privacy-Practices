@@ -1,0 +1,567 @@
+<html>
+<div>
+    <p>Original post by <b>/bxbi117</b> on r/privacytoolsIO. Original post can be found here: <a
+            href="https://www.reddit.com/r/privacytoolsIO/comments/fwgvsb/windows_10_best_privacy_practices/"
+            target="_blank">Windows 10 Best Privacy Practices</a></p>
+</div>
+<div class="_2FCtq-QzlfuN-SwVMUZMM3 _2v9pwVh0VUYrmhoMv1tHPm t3_fwgvsb" data-adclicklocation="title">
+    <div class="y8HYJ-y_lTUHkQIc1mdCq _2INHSNB8V5eaWp4P0rY_mE">
+        <div class="_2SdHzo12ISmrC8H86TgSCp _29WrubtjAcKqzJSPdQqQ4h " style="--posttitletextcolor:#D7DADC">
+            <h1 class="_eYtD2XCVieq6emjKBH3m">Windows 10 Best Privacy Practices</h1>
+        </div>
+    </div>
+    <div class="_1hLrLjnE1G_RBCNcN9MVQf">
+        <img alt="" src="https://www.redditstatic.com/desktop2x/img/renderTimingPixel.png"
+            style="width: 1px; height: 1px;" onload="(__markFirstPostVisible || function(){})();" wan3j5th9="">
+    </div>
+    <style>
+        .t3_fwgvsb._2FCtq-QzlfuN-SwVMUZMM3 {
+            --postTitle-VisitedLinkColor: #edeeef;
+            --postTitleLink-VisitedLinkColor: #6f7071;
+            --postBodyLink-VisitedLinkColor: #6f7071;
+        }
+    </style>
+</div>
+<div class="_3xX726aBn29LDbsDtzr_6E _1Ap4F5maDtT1E1YuCiaO0r D3IL3FD0RFy_mkKLPwL4" style="max-width:800px"
+    data-click-id="text" data-adclicklocation="media">
+    <div class="_292iotee39Lmt0MkQZ2hPV RichTextJSON-root">
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">In this post im sharing my Guide for
+                the best Windows 10 privacy/security practices based on my own personal experience. It may not be
+                perfect, so feel free to add your input/suggestions.</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">STEP 1:</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Its best to choose the right Windows
+                10 version.</strong> (Windows 10N is not good enough, you need to use <strong
+                class="_12FoOEddL7j_RgMQN0SNeU">LTSC</strong> or <strong class="_12FoOEddL7j_RgMQN0SNeU">LTSB</strong>).
+            These versions are already debloated from a lot of rubbish so you're off to a good start, they also only
+            receive Security updates, rather than 'feature' updates. You'll find this on torrent sites (the uploader
+            "Gen2" is the best and trustworthy). *Note: for anyone concerned about missing media codecs etc, just
+            download K-Lite Codecs / MPC.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">If you've just installed a fresh /
+                clean / new Windows 10,</strong> <em class="_7s4syPYtk5hfUIjySXcRE"><strong
+                    class="_12FoOEddL7j_RgMQN0SNeU">Skip to step 2.</strong></em></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">If you're not coming from a fresh
+                install;</strong> Start off with 'repairing Windows 10', the unofficial way. I fully vouch for this
+            software, it done a great job on one of my previous infected PC's. It can be downloaded from;</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">- Bleepingcomputer: <a
+                href="https://www.bleepingcomputer.com/download/windows-repair-all-in-one/"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://www.bleepingcomputer.com/download/windows-repair-all-in-one/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">- Tweaking.com: <a
+                href="https://www.tweaking.com/content/page/windows_repair_all_in_one.html"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://www.tweaking.com/content/page/windows_repair_all_in_one.html</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">The above tool is not some crappy gimmick tool as it appears, its the real
+            deal. In my case, the standard DISM / SFC Repairs were not working, even after multiple fresh installs of
+            windows , the "malware" survived , as i had persistent problems. This tool actually reverts everything
+            forcefully back to the original/default - such as: file/owner permissions, registry permissions and default
+            registry values, verifies digital signatures of all windows components, Reparse points etc.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Some 'malware' even extends to windows services. For example, if you type
+            'sevices.msc' in the search bar, you can launch the services panel. Here, you can see all the windows
+            services. There is a column named 'log on as'. Some services are local services, and some are network
+            services. Malicious actors can hijack system services and change the log on user - this tool can help with
+            that too, and optionally, you can revert any affected services manually by changing the 'log on as' to
+            <strong class="_12FoOEddL7j_RgMQN0SNeU">NT AUTHORITY / Local service</strong> (password blank). (NOTE: not
+            all services are supposed to be local services, im just giving you an example).
+        </p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><em class="_7s4syPYtk5hfUIjySXcRE"><strong
+                    class="_12FoOEddL7j_RgMQN0SNeU">OFF TOPIC:</strong></em> in reference to the above, please note: i
+            didn't have a 'virus' &gt; kaspersky could not detect anything, malwarebytes nothing, hitmanpro, tdskiller
+            (kaspersky rootkit tool). I had an issue with a malicious actor which gained access to my network, and this
+            tool really helped - i suspect on every new install the old 'settings' were restored somehow.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Along with this tool, i used <a href="https://gparted.org/"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc" target="_blank">GPARTED</a> to remove any
+            HPA hidden partition in all hard drives using the terminal and some special commands. Changing my HDD's
+            UUID's, resizing/moving partitions/sectors left/right to re-allign them and overwrite what was
+            hidden/stored. <a href="https://www.cgsecurity.org/wiki/TestDisk" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">Testdisk</a> also helped by alerting me to detected hidden
+            partition (HPA) , and sector mismatches on all my drives. And ofcourse, in a scenario like this, nuking and
+            replacing the router with a <a href="https://www.pfsense.org/" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">PFSENSE</a>.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><em class="_7s4syPYtk5hfUIjySXcRE"><strong
+                    class="_12FoOEddL7j_RgMQN0SNeU">LETS GET BACK ON TRACK:</strong></em></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">I also recommend running
+                TRON:</strong> <a href="https://www.reddit.com/r/TronScript/" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">https://www.reddit.com/r/TronScript/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">(although it is better to simply start fresh with a clean install of LTSC /
+            LTSB)</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">STEP 2:</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Debloat (the most important
+                step).</strong> We need to further debloat Windows 10. This will effectively enhance your privacy,
+            security - aswell as your PC performance. To do so, we're going to run multiple scripts;</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Scripts Location:</strong> <a
+                href="https://github.com/supmaxi/Debloat-Windows-10" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">https://github.com/supmaxi/Debloat-Windows-10</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Please read the README before running the scripts. You need to enable
+            execution of powershell scripts following the instructions FIRST. If you dont do this, the scripts will
+            still run, but without the maximum permission required to do some of the jobs.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">This tool is my own fork of W4RH4WK's
+                tool, and also includes Sycnex's tool, plus other modifications and enhancements/additions not just
+                related to privacy, but also security. In my opinion it is really the best collection of scripts and the
+                most effective. Totally safe to use and will not kill your search/start menu either! This is not like
+                O&amp;O shutup 10, which just toggles certain settings (and closed source), this is real
+                debloating.</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">[NOTES]:</strong> You can also open
+            each individual script using <a href="https://notepad-plus-plus.org/" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">NotePad++</a> and modify if necessary. For example , if you
+            dont want to remove the Windows App Store, you can comment out # the line. (however, i recommend to run all
+            as default - you will really feel the difference after running all these scripts, especially if you have a
+            weak laptop etc).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">STEP 3:</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">At this stage, if executed correctly, we have significantly removed &amp;/or
+            disabled a whole load of windows modules/services - and not only have we increased the privacy and security
+            of the PC, but we've also increased its performance.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">ie; we've fully removed cortana, onedrive, windows defender, windows app
+            store, and disabled/removed spy services, telemetry, bloatware etc. These are all modules which are
+            constantly working in the background on a typical PC.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">We've also added security benefits, like disabling remote desktop related
+            services, unsecure services/protocols which you probably dont even know exist (not to fear, these can be
+            re-enabled at any time).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">So lets move on to the next section - SECURITY:</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">NO Antivirus software.</strong> These
+            days AV companies offer free software, why? Because their new business is collecting your data. The AV
+            software is monitoring your every move 'realtime protection', and if you enable cloud protection, its also
+            sending a significant amount of data to third parties for processing.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Don't believe me?</strong> Take this
+            as an example: Kaspersky has EU editions of its products, to comply with the European Unions GDPR law (which
+            is essentially basic privacy laws). They also have editions of software which are not allowed to be used in
+            the European Union.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">HOW TO PROTECT YOUR PC WITHOUT AV
+                SOFTWARE</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">The best way to protect your PC from viruses and malicious actors is to;</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">a: learn how to use the internet safely; ie; dont download random apps from
+            shady websites, etc.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">b: install <strong class="_12FoOEddL7j_RgMQN0SNeU">'UBlock ORIGIN' and 'HTTPS
+                EVERYWHERE'</strong> as 'extensions / plugins' for Chrome (if you use Chrome) or Firefox (if you use
+            Firefox). Additionally, install the <strong class="_12FoOEddL7j_RgMQN0SNeU">'NoScript'</strong> plugin into
+            the browser you use for lesuire purposes (its best to keep one browser for work, and one for lesuire). The
+            reason i don't add <strong class="_12FoOEddL7j_RgMQN0SNeU">'NoScript'</strong> to my 'work browser' (which
+            is Chrome), is because it can break some sites, or require you to add an exception to make that site work as
+            intended &gt; which takes you off track from focusing on work.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Each browser (especially FireFox) has additional measures you can take to
+            enhance its privacy / security. But i wont get into those details here, you can find them in other threads.
+            But you'll want to do things like disable WebRTC, disable the built in 'smart screen protection' etc.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">c. <strong class="_12FoOEddL7j_RgMQN0SNeU">FIREWALL</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">A Firewall is a great way to block malicious actors, and also, to gain an
+            understanding of what your PC and programs are actually doing behind the scenes.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">SIMPLEWALL: An amazing Open-Source
+                Firewall</strong></p>
+        <ol class="_1eJr7K139jnMstd4HajqYP">
+            <li class="_3gqTEjt4x9UIIpWiro7YXz">
+                <p class="_1qeIAgB0cPwnLhDF9XSiJM"><a href="https://www.henrypp.org/product/simplewall"
+                        class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                        target="_blank">https://www.henrypp.org/product/simplewall</a></p>
+            </li>
+            <li class="_3gqTEjt4x9UIIpWiro7YXz">
+                <p class="_1qeIAgB0cPwnLhDF9XSiJM"><a href="https://github.com/henrypp/simplewall/releases"
+                        class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                        target="_blank">https://github.com/henrypp/simplewall/releases</a></p>
+            </li>
+        </ol>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Please take some time to configure it, once you know how it works (quite
+            simple actually) - its awesome. You can block internet access to specific system modules, apps, etc. You can
+            also block IP Addresses, including its built in list of Telemetry IP addresses.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">You'll want to block a wide range of
+                Windows modules such as anything to do with Hyper-V (virtual machines), remote desktop connections,
+                remote registry , event viewer, remote shell, etc. This will ensure that those specific windows modules
+                have no access to the internet to accept either incoming connections, or to make outgoing
+                connections.</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">You'll also want to create 'system
+                wide' block rules blocking common filesharing and exploit ports system-wide (this is usually done on the
+                router firewall, but it wont hurt to do them on both the OS and router side for an extra layer of
+                protection - since most consumer routers have built-in backdoors and exploits). Proof of that is
+                available online, heres NETGEAR's awful track record:</strong> <a
+                href="https://www.cvedetails.com/vulnerability-list/vendor_id-834/Netgear.html"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://www.cvedetails.com/vulnerability-list/vendor_id-834/Netgear.html</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">135-139 [netBIOS], 445 [SMB/Azure],
+                1900 [UPnP], 500 [ISAKMP], 5000 [UPnP], 5353 [MulticastDNS], 5355 [Multicast], 8001 [Backdoor Tunnel],
+                23 [Telnet], 1433-1434 [SQL SPybot], 3478 [STUN], 113 [Ident/Auth], etc. (there's a lot more, hence its
+                better to take the 'block all' approach detailed below):</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">If you are an advanced user,</strong>
+            you can start with a 'block all' approach (recommended), and work your way up (allowing things which you
+            use). For example, You can only allow Chrome to talk on port 443 and port 80 , any other port is blocked,
+            etc. You can block Microsoft office from the internet (a good idea as many remote attacks target MS Office
+            documents), etc. (side note: i recommend using <a href="https://www.libreoffice.org/"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc" target="_blank">LibreOffice</a>).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">SIMPLEWALL can log all blocked traffic - so youll get a real understanding of
+            what your PC is doing. Use this instead of Microsoft's built in firewall. (We'll still configure the Windows
+            Defender Advanced Firewall via Group Policy - will get to the later in the thread).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">If this seems all too much for you - DONT STRESS. The default configuration
+            of SIMPLEWALL is already effective and provides a great layer of security. You'll notice right away, with
+            its default built in block settings (for example, when you launch chrome you may get a pop up that chrome is
+            trying to use mDNS on port 1900, click 'block' and it will block chrome doing that forever).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><br></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">d. <strong class="_12FoOEddL7j_RgMQN0SNeU">MBRFilter by Cisco Talos;</strong>
+            Usually, you wouldn't see Cisco in any privacy based post. However, this tool is open source and available
+            on github</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">github; <a href="https://github.com/vrtadmin/MBRFilter"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://github.com/vrtadmin/MBRFilter</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">official; <a href="https://talosintelligence.com/mbrfilter"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://talosintelligence.com/mbrfilter</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">What does it do?</strong> MBR Filter
+            prevents rootkits, bootkits, and ransomware, such as Petya Ransomware, from overriding the operating
+            system’s boot loader. Ransomware, like Petya, overwrite and encrypt the victim’s Master File Table (MTF) to
+            coerce them into paying for an encryption key.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">How does it work?</strong> It will
+            prevent write access to your systems boot loader, rendering many of the most advanced malware
+            useless/ineffective.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">How to install it?</strong> It's a
+            one time installer (not a software package) - the precompiled version comes in the form of a driver (1 click
+            install). (its open source if you compile it yourself from the source code - its not open source if you
+            download the easy 1 click pre-compiled installer). After installation, you wont find it in your 'program
+            files', it works just like a script.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">STEP 4:</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Harden Windows 10</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">-</strong> Control Panel &gt; System
+            and Security &gt; Security and Maintenance &gt; CHANGE USER ACCOUNT CONTROL SETTINGS (UAC): <strong
+                class="_12FoOEddL7j_RgMQN0SNeU">set this to the highest level.</strong> This is very important to
+            mitigate the very common method used by malicious actors (running code such as powershell scripts or remote
+            shell without admin prompts).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">- <strong class="_12FoOEddL7j_RgMQN0SNeU">ENABLE ALL Windows Exploit
+                Protection settings such as Arbitrary code guard (ACG). Set them to "ON by default"</strong>. Advanced
+            users can even go further by adding custom exploit protection settings for specific system modules (built in
+            feature of newer editions of windows). You can block remote fonts, verifying stack integrity, and blocking
+            DLL injections etc. (please note; if adding the extra/custom exploit protection settings, it will slow down
+            the computer, so choose wisely based on your needs. This in itself is a no-frills 24/7 'anti virus').</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">- In the Windows Search Bar, type <strong
+                class="_12FoOEddL7j_RgMQN0SNeU">"Internet explorer".</strong> Launch IE, and open its settings. You want
+            to manually configure all zones, including local intranet zone, trusted sites zone , internet zone etc.
+            <strong class="_12FoOEddL7j_RgMQN0SNeU">SET THEM ALL TO THE HIGHEST LEVEL,</strong> <em
+                class="_7s4syPYtk5hfUIjySXcRE"><strong class="_12FoOEddL7j_RgMQN0SNeU">including the LOCAL
+                    zone.</strong></em> Many users are unaware that IE is a vital part of Windows and is still used in
+            the background until this day. It cannot be fully uninstalled or removed from Windows due to this.
+            Furthermore, many exploits are run through IE - so setting all zones to the highest level of security is a
+            vital part of your PC's security. Many attacks happen through vulnerabilities on the local/lan side.
+        </p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">- In the Windows Search Bar, type <strong
+                class="_12FoOEddL7j_RgMQN0SNeU">"Turn Windows features on or off". UNCHECK EVERYTHING.</strong> In my
+            case, ive left 'Microsoft Print to PDF' enabled, as i do use that feature. Nothing else is required or used.
+            This will uninstall/disable Internet Explorer 11, it will also remove/disable Windows unsecure SMB v1
+            filesharing protocol, powershell 2.0, Telnet, etc.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">- <strong class="_12FoOEddL7j_RgMQN0SNeU">GROUP POLICY :</strong> Group
+            policy needs a whole separate thread &gt; there are many settings to adjust. This includes restricting
+            guests, guest logins, microsoft users/azure groups/domain shares, Active Directory authentication etc. There
+            are websites that post known vulnerabilities/exploits which are "patched" by changing some group policy
+            settings. There are also some government websites which post recommended Group Policy settings, such as this
+            one: <a href="https://www.cyber.gov.au/sites/default/files/2019-03/hardening_win10_1709.pdf"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://www.cyber.gov.au/sites/default/files/2019-03/hardening_win10_1709.pdf</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">So youll need to research those yourselves.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Group Policy is an advanced tool
+                vital for your PC's security.</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">You need to picture Windows 10 as
+                being in like a 'virtual environment'. What do i mean by this?</strong> I mean, Windows 10 has a
+            hierarchy system. For example, if you work in an office, and use an office PC - sure, you can set your own
+            local firewall rules. But if the network administrator blocks <a href="https://www.example.com"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc" target="_blank">www.example.com</a> from the
+            'head office / management' side, you cant do anything locally to unblock it (or vice versa). This is how
+            group policy works. Group policy is the 'head office / management' of windows 10.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Group policy &gt; Windows Settings
+                &gt; Security Settings &gt; Windows Defender Firewall With advanced Security.</strong> This is the
+            'parent' defender, which can override the standard defender (that we removed in the scripts above). If you
+            have already configured some rules in the 'standard' defender, then i recommend to check out the group
+            policy defender now. You will see that none of your configuration exists. It is a common tactic of malicious
+            actors to take over your machine. If you never configured the group policy defender, they can bypass all
+            your 'standard' defender rules through group policies defender application. So this is a great step to learn
+            how windows really works, and how to secure it properly.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">You'll also want to configure other security related group policy settings.
+        </p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">For example, if you were using the standard Windows DEFENDER Firewall (even
+            the 'Windows 10 advanced firewall' client-side), and your PC was compromised (taken over by a malicious
+            actor) - they can override all your local firewall rules without any effort. But if you had group policy in
+            place, and set your firewall rules from WITHIN group policy, then you will make it very difficult for the
+            malicious actor to override your system settings and gain access.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">It is very strange and stupid, how Windows 10 works like that. The
+            'client-side' Windows DEFENDER Firewall provides a false feeling of security, at best. Not forgetting that
+            new rules pop up out of no where, allowing access to things you never gave permission too, all by itself.
+            Even when you disable rules it automatically generated, you will find later that it adds new rules again to
+            bypass your configuration).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">If you dont have group policy in
+                place, the malicious actor will become your 'group policy manager'.</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Remember that the firewall in GROUP POLICY has separate rules for the public
+            network, domain network, and private network. You need to set all the rules in each category (they are all
+            equally as important - do not think "oh, i dont use a domain network so ill just leave that"). The DOMAIN
+            network is a common backdoor entry point (sometimes referred too as Active Directory/ MS AZURE).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">To avoid confusion: I recommend to configure the windows firewall in GROUP
+            POLICY, PLUS the simplewall firewall mentioned above - this will provide the maximum level of security from
+            unauthorized access to your PC.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">OTHER SECURITY RELATED
+                NOTES:</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">*DO NOT* keep ISO 'live boot cd's' stored on your PC.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">If you like to keep a collection of software, including ISO boot cd's, such
+            as Hiren's BootCD (and all the other new ones similar) - please take this seriously.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">If a malicious actor gained access to your system, they can take advantage of
+            these tools you have readily available for them on your machine. Dont forget that you can launch/mount any
+            of those ISO's as virtual disks and use the tools included against you.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Instead, keep them stored on an external HDD that isn't plugged in to your PC
+            all the time.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">IP's/Domains to add to your firewall
+                block list / feed (For blocking malware, known attackers, ads, trackers, etc). Blocklists from these
+                sources WILL NOT break any sites, they will just protect you while browsing online:</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">These are best to be used with a PFSENSE Box (PFBlockerNG) or PiHole running
+            24/7.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Think of this like the 'UblockOrigin' extension - they work exactly the same
+            way &gt; exept its filtering your entire internet from the router side, for all your devices in real-time.
+            <strong class="_12FoOEddL7j_RgMQN0SNeU">(the best investment to make). You can filter not only ad domains,
+                ips, trackers, but also known malicious ip's, attackers, honeypots, scanners/researchers etc.</strong>
+        </p>
+        <div class="_7T4UafM1PdBGycd5na9nF">3rd Party Blocklists (my personal favourites which i use and recommend):
+        </div>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Cisco Talos (Daily-Update API) <a
+                href="http://talosintel.com/feeds/ip-filter.blf" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">http://talosintel.com/feeds/ip-filter.blf</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Alienvault (Daily-Update API) <a
+                href="https://reputation.alienvault.com/reputation.generic" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">https://reputation.alienvault.com/reputation.generic</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">matthewroberts.io (Daily-Update API) <a
+                href="https://www.matthewroberts.io/api/threatlist/latest" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">https://www.matthewroberts.io/api/threatlist/latest</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">ThreatIntel High Confidence (Daily-Update API) <a
+                href="https://threatintel.stdominics.sa.edu.au/droplist_high_confidence.txt"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://threatintel.stdominics.sa.edu.au/droplist_high_confidence.txt</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">ThreatIntel Low Confidence (Daily-Update API) <a
+                href="https://threatintel.stdominics.sa.edu.au/droplist_low_confidence.txt"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://threatintel.stdominics.sa.edu.au/droplist_low_confidence.txt</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">quidsup anti-track (Manually Updated by Author) <a
+                href="https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">IPSUM (Daily-Update API) <a
+                href="https://github.com/stamparm/ipsum/blob/master/ipsum.txt?raw=true" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc"
+                target="_blank">https://github.com/stamparm/ipsum/blob/master/ipsum.txt?raw=true</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Blackbook Malware Domains (Daily-Update API) <a
+                href="https://raw.githubusercontent.com/stamparm/blackbook/master/blackbook.txt"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://raw.githubusercontent.com/stamparm/blackbook/master/blackbook.txt</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Bad Packets <a
+                href="https://github.com/tg12/bad_packets_blocklist/raw/master/bad_packets_list.txt"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://github.com/tg12/bad_packets_blocklist/raw/master/bad_packets_list.txt</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Microsoft Telemetry + Analytics + Azure IP Blocks (will not break anything):
+            <a href="https://github.com/supmaxi/Bad-IP-s/raw/master/Microsoft%20Telemetry%20%2B%20Analytics%20%2B%20Azure%20IP%20Blocks"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://github.com/supmaxi/Bad-IP-s/raw/master/Microsoft%20Telemetry%20%2B%20Analytics%20%2B%20Azure%20IP%20Blocks</a>
+        </p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Microsoft Telemetry Domains (will not break anything): <a
+                href="https://github.com/supmaxi/Bad-IP-s/raw/master/Microsoft%20Telemetry%20Domains"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://github.com/supmaxi/Bad-IP-s/raw/master/Microsoft%20Telemetry%20Domains</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Microsoft Telemetry IPs (will not break anything): <a
+                href="https://github.com/supmaxi/Bad-IP-s/raw/master/Microsoft%20Telemetry%20IPs"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://github.com/supmaxi/Bad-IP-s/raw/master/Microsoft%20Telemetry%20IPs</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">other resources; <a href="https://github.com/supmaxi/Bad-IP-s"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://github.com/supmaxi/Bad-IP-s</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">OTHER RESOURCES</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Privacy Resources/Library:</strong>
+            <a href="https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc"
+                target="_blank">https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List</a>
+        </p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">--------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">#P2P Anti Piracy Block Lists - ONLY
+                USE THESE WHEN/IF TORRENTING WITHOUT A VPN -</strong> (These lists WILL BREAK normal sites and will make
+            it impossible to browse the internet normally - super huge anti-track blocklist - good for torrenters only -
+            prevent receiving a DMCA letter for piracy) - these lists are extreme, and will block entire ranges of
+            suspect IP blocks and i believe are targeted towards law enforcement agencies, and copyright agencies. They
+            are not use-able in the real world.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">See here for info: <a
+                href="https://gist.github.com/shmup/29566c5268569069c256" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">https://gist.github.com/shmup/29566c5268569069c256</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">The P2P Lists contain a combination of all blocklists included on: <a
+                href="https://www.iblocklist.com/lists" class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://www.iblocklist.com/lists</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">You dont want to add these lists to your PFSENSE (PFBlockerNG) or PiHole
+            rigs. Because the lists you add in PFBlockerNG or PiHole are lists that you want to "set and forget" and
+            ones to use 24/7 without breaking the internet.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Only use these lists with either <a
+                href="https://www.fosshub.com/PeerBlock.html" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">PeerBlock</a> (if you dont want to change your torrent
+            client) - or use with <a href="https://transmissionbt.com/download/" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">Transmission Torrent Client</a> (which supports adding lists
+            within the client). They are both open-source.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">If you use a VPN while torrenting -
+                you dont need to use these while torrenting and can completely skip this.</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">List 1 Download: <a href="http://john.bitsurge.net/public/biglist.p2p.gz"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://john.bitsurge.net/public/biglist.p2p.gz</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">List 2 Download: <a
+                href="https://github.com/Naunter/BT_BlockLists/raw/master/bt_blocklists.gz"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://github.com/Naunter/BT_BlockLists/raw/master/bt_blocklists.gz</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">List 3 Download: <a
+                href="https://github.com/sahsu/transmission-blocklist/releases/latest/download/blocklist.gz"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://github.com/sahsu/transmission-blocklist/releases/latest/download/blocklist.gz</a>
+        </p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><br></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">*EDIT: I was contemplating on
+                removing this P2P section</strong>, because i personally dont use it - since it doesnt really make sense
+            in this day and age (where we have many great VPN providers, including free options such as <a
+                href="https://protonvpn.com/" class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">ProtonVPN</a>.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">I personally use <a href="https://www.qbittorrent.org/"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc" target="_blank">Qbittorrent</a> , and would
+            use <a href="https://protonvpn.com/" class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">ProtonVPN</a> when torrenting, or, use any of the VPN's recommended by privacytools <a
+                href="https://www.privacytools.io/providers/vpn/" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">here</a>.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">But i will leave this section up for reference material, incase anyone is
+            interested, since i went through the trouble to collect the resources anyway.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">----------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">-----------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Open source Virus Scanner (if you
+                ever needed to do an 'offline scan' or 'one time scan' for a sanity check):</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">ClamAV</strong> is an open source
+            antivirus engine for detecting trojans, viruses, malware &amp; other malicious threats. It was developed by
+            Cisco and is the default AV used on many Linux based systems. Official site is <a
+                href="https://www.clamav.net/" class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">here</a> if you wish to check it out.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">On Windows, there are 2 ways to use this. The first method is quite complex ,
+            and requires you to manually download the virus database files. You run the scan via CMD and need to
+            manually edit config files (its too much work for most of us).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">The second method is very easy - this is an easy to use Windows app based on
+            ClamAV &gt; <a href="http://www.clamwin.com/" class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">http://www.clamwin.com/</a> - its open source , and takes out all the hard work , and
+            provides you with a simple GUI. I recommend this.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">TRON - for Malware / maintenance (if
+                necessary)</strong> : <a href="https://www.reddit.com/r/TronScript/" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">https://www.reddit.com/r/TronScript/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Note that TRON installs Malwarebytes (Which i dont recommend) - however you
+            can disable it from being installed in the script prior to running.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Trusted source for KMS Win activation
+                tools:</strong> <a href="https://github.com/CHEF-KOCH/KMS-activator/releases"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://github.com/CHEF-KOCH/KMS-activator/releases</a> (although i dont recommend this
+            - i recommend leaving Windows not activated - my scripts should remove the license checking from windows -
+            and you can always use '<a href="https://github.com/mirinsoft/debotnet" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">debotnet</a>' to remove the "activate windows" watermark
+            permanently.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">WSUS Offline Updates:</strong> Here
+            you can cherry pick and manually download Windows 10 updates, including security updates, without using the
+            windows built-in 'windows update'. <a href="https://download.wsusoffline.net/"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://download.wsusoffline.net/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">ROUTER SECURITY OPEN-Source</strong>
+        </p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">OpenWRT</strong>: For a free, no cost
+            security upgrade, check if your router supports <a href="https://openwrt.org/"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc" target="_blank">https://openwrt.org/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Many consumer routers are able to be flashed with this custom firmware which
+            will enhance your security (although again, you need to configure it, which is a learning process).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">PiHole:</strong> <a
+                href="https://pi-hole.net/" class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://pi-hole.net/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">PFSENSE</strong> (for advanced users,
+            with an advanced level of protection): <a href="https://www.reddit.com/r/PFSENSE/"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://www.reddit.com/r/PFSENSE/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">OPNSense</strong> (alternative to
+            PFSENSE): <a href="https://opnsense.org/" class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://opnsense.org/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><br></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Other OPEN-Source Resources</strong>
+        </p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">NextCloud:</strong> Create your own
+            private self-hosted Dropbox/Cloud service <a href="https://nextcloud.com/" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">https://nextcloud.com/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">KeePass:</strong> opensource password
+            manager with encryption <a href="https://www.reddit.com/r/KeePass/" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">https://www.reddit.com/r/KeePass/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Bitwarden:</strong> opensource
+            password manager with encryption <a href="https://www.reddit.com/r/Bitwarden/"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://www.reddit.com/r/Bitwarden/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">bleachbit:</strong> opensource
+            cleaner. With BleachBit you can free cache, delete cookies, clear Internet history, shred temporary files,
+            delete logs, and discard junk you didn't know was there. Beyond simply deleting files, BleachBit includes
+            advanced features such as shredding files to prevent recovery, wiping free disk space to hide traces of
+            files deleted by other applications, and vacuuming Firefox to make it faster. Better than free, BleachBit is
+            open source. <a href="https://www.bleachbit.org/" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">https://www.bleachbit.org/</a></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Windows Hosts File:</strong> <a
+                href="https://github.com/supmaxi/Bad-IP-s/raw/master/Windows%20Hosts%20File%20Block%20Telemetry%20Domains"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc"
+                target="_blank">https://github.com/supmaxi/Bad-IP-s/raw/master/Windows%20Hosts%20File%20Block%20Telemetry%20Domains</a>
+        </p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">An easy, copy paste or replace, your windows hosts file which is located
+            here: C:\Windows\<strong class="_12FoOEddL7j_RgMQN0SNeU">System32</strong>\drivers\etc\hosts</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">This will block Microsoft telemetry through the hosts file</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Debloat Windows 10 Scripts:</strong>
+            <a href="https://github.com/supmaxi/Debloat-Windows-10" class="_3t5uN8xUmg0TOwRCOGQEcU"
+                rel="noopener nofollow ugc" target="_blank">https://github.com/supmaxi/Debloat-Windows-10</a>
+        </p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Obviously already mentioned, but will leave it here as a resource also -
+            arguably the best debloating tool you will ever use.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><br></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Author Ending Notes</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">------------------------------------</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Guys, thanks for your appreciation, and i hope ive helped someone out.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">I just want to mention that if you're not really comfortable without having a
+            'proper' antivirus - feel free to use a third party AV (i still dont recommend defender).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">If i personally had to choose a third
+                party AV, it would probably be Kaspersky Internet Security - based on its actual performance, and not on
+                any other factors (although i dont, i do exactly what i mentioned in this guide).</strong></p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Do not use any free AV, as you know, nothing is free in this world - you are
+            usually the product. All free AV including kaspersky uses cloud based protection. With the paid version of K
+            internet security, you have the option to not enable the KSN (kaspersky cloud protection) - and you can buy
+            a license cheap from ebay (genuine).</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Just remember with whatever provider you choose, make sure you dont have the
+            'ssl inspection' / 'web protection' setting enabled - because the software will MiTM every website you
+            visit, which is both a security issue and a privacy issue.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Also, make sure you're not protected via cloud - because literally, all of
+            your files metadata (like barcodes) are known and all of your 'machine behaviour' analyzed and you can be
+            profiled. Depending on who you are, where you are located, and what you do - this can be important to you.
+            For example, journalists, researchers, or living in strict countries - suspicious or known hashes of
+            targeted files/documents and so forth can be collected.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">We dont even know what the AV is collecting without cloud based protection,
+            and many (including kaspersky) that dont even comply with BASIC GDPR laws. You definitely shouldn't 'sign
+            in' to 'my kaspersky' and link yourself to their portal.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">Here is a great example:</strong></p>
+        <div class="_7T4UafM1PdBGycd5na9nF"><a
+                href="https://arstechnica.com/information-technology/2017/11/kaspersky-yes-we-obtained-nsa-secrets-no-we-didnt-help-steal-them/"
+                class="_3t5uN8xUmg0TOwRCOGQEcU" rel="noopener nofollow ugc" target="_blank">Kaspersky: Yes, we obtained
+                NSA secrets. No, we didn’t help steal them.</a></div>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">As soon as Kaspersky identified (automatically/systematically) the malware
+            being related to the NSA - they immediately notified the NSA. Which proves my point. Maybe you're a security
+            researcher that found some leaked malware on github, or simply a geek, data hoarder. The AV software may
+            work against you - putting you on a watch list.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM"><strong class="_12FoOEddL7j_RgMQN0SNeU">You need to find the right balance
+                between privacy and security - it's not the same for everyone, and you cant have the best of both
+                worlds. To have better security, you need to sacrifice some privacy. To have better privacy, you need to
+                sacrifice some security.</strong> In my opinion, and based on my useage of my PC's, i think i've hit the
+            sweet spot with this guide.</p>
+        <p class="_1qeIAgB0cPwnLhDF9XSiJM">Make your own decision on what you think is best for you :)</p>
+    </div>
+</div>
+<div><b><a href="https://www.reddit.com/r/privacytoolsIO/comments/fwgvsb/windows_10_best_privacy_practices/"
+            target="_blank">Original post here</a></b></div>
+</div><span></span><span></span><span></span>
+</div>
+
+</html>
